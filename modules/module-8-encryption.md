@@ -15,20 +15,20 @@ NODE_NAME=$(kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=
 This command starts a privileged container on your node and connects to it over SSH:
 
 ```bash
-kubectl debug node/$NODE_NAME -it --image=mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11
+kubectl debug node/$NODE_NAME -it --image=ubuntu:latest
 ```
 
 Output will be like:
 
 ```bash
-Creating debugging pod node-debugger-aks-nodepool1-41939440-vmss000001-c9bjq with container debugger on node aks-nodepool1-41939440-vmss000001.
+Creating debugging pod node-debugger-ip-192-168-17-120.ca-central-1.compute.internal-8n2c5 with container debugger on node ip-192-168-17-120.ca-central-1.compute.internal.
 If you don't see a command prompt, try pressing enter.
 ```
 
 Interact with the node session by running chroot /host from the privileged container.
 
 ```bash
-root@aks-nodepool1-37054976-vmss000002:/# chroot /host
+root@ip-192-168-17-120:/# chroot /host
 #
 ```
 
@@ -41,10 +41,10 @@ lsmod | grep wireguard
 The output should look something like this:
 
 ```bash
-wireguard             217088  0
+wireguard             94208  0
 ```
 
-Now that we've enabled the wireguard module on the 3 nodes we can enable encrpytion through the 'felixconfiguration' in Calico.
+Now that we've verified that the wireguard module is enabled on the worker nodes kernel we can enable encryption through the 'felixconfiguration' in Calico.
 
 ## Enable End to End Encryption
 
