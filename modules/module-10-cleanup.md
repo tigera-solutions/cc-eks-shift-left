@@ -7,22 +7,13 @@
    kubectl delete -f manifests/00-namespaces.yaml
    ```
 
-2. Delete the AKS cluster.
+2. Delete the EKS cluster.
 
    ```bash
-   az aks delete \
-     --resource-group $RESOURCE_GROUP \
-     --name $CLUSTERNAME
+   eksctl delete cluster $CLUSTERNAME
    ```
 
-3. Delete the resource group.
-
-   ```bash
-   az group delete \
-     --name $RESOURCE_GROUP
-   ```
-
-4. Delete environment variables backup file.
+3. Delete environment variables backup file.
 
    ```bash
    rm envLabVars.env
