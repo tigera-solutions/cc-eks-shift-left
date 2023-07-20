@@ -1,8 +1,8 @@
-# Microsoft Azure: Hands-on AKS workshop </br> Shift-left security with Vulnerability Management in AKS and Calico Cloud
+# AWS: Hands-on EKS workshop </br> Shift-left security with Vulnerability Management in EKS and Calico Cloud
 
 ## Welcome
 
-In this EKS-focused workshop, you will work with AWS and Calico Cloud to learn how to design and deploy best practices to secure your Kubernetes environment at build,deploy and runtime -  preventing, detecting and building a security moat around your workloads to protect from container and network-based attacks as early as possible in the development and early runtime phases.
+In this EKS-focused workshop, you will work with AWS/EKS and Calico Cloud to learn how to design and deploy best practices to secure your Kubernetes environment at build,deploy and runtime -  preventing, detecting and building a security moat around your workloads to protect from container and network-based attacks as early as possible in the development and early runtime phases.
 
 Cloud-native applications require a modern approach on zero-trust principles identity-based access, least privilege access, and proactively putting in the guardrails as early in the development process as possible.
 
