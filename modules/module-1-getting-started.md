@@ -6,6 +6,9 @@
 
 >At the instructor-led workshop this module can be skipped as a workspace environment will be provided.
 
+1. Go to the [provided link](https://dashboard.eventengine.run/) to get access to your AWS environment. 
+2. Enter the event hash as provided by the instructor, accept the terms and login.
+
 ## Choose between local environment and Cloud9 instance
 
 The simplest ways to configure your workspace environment is to either use your local environment, i.e. laptop, desktop computer, etc., or create an [AWS Cloud9 environment](https://docs.aws.amazon.com/cloud9/latest/user-guide/tutorial.html) from which you can run all necessary commands in this workshop. If you're familiar with tools like `ssh client`, `git`, `jq`, `Ncat` and feel comfortable using your local shell, then go to `setp 2` in the next section.
