@@ -9,7 +9,11 @@
 1. Go to the [provided link](https://dashboard.eventengine.run/) to get access to your AWS environment. 
 2. Enter the event hash as provided by the instructor, accept the terms and login.
    <img width="1412" alt="Screen Shot 2023-07-20 at 10 56 13 AM" src="https://github.com/tigera-solutions/cc-eks-shift-left/assets/117195889/1df789b2-078f-4102-80b4-228ea8bfaadc">
-
+3. Follow the instructions to login to the lab env
+   ![Screen Shot 2023-07-20 at 12 46 46 PM](https://github.com/tigera-solutions/cc-eks-shift-left/assets/117195889/c837711e-4c71-4738-9745-90860d24a501)
+   ![Screen Shot 2023-07-20 at 12 47 46 PM](https://github.com/tigera-solutions/cc-eks-shift-left/assets/117195889/18b01a46-2cd3-4c31-b426-86d29b554679)
+4. Click on AWS Console Login to get your access and secret keys and setup your AWS credentials, along with default region as us-east-2 in your Cloud9 console or local terminal of choice
+   ![Screen Shot 2023-07-20 at 12 48 34 PM](https://github.com/tigera-solutions/cc-eks-shift-left/assets/117195889/bdeaada6-defb-4b14-afbf-5f2e19a73d8d)
 
 
 ## (Optional) Choose between local environment and Cloud9 instance
